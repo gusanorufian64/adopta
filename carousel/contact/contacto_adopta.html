@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Contact V13</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->
+	<!--<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>-->
+  <link rel="shortcut icon" href="C:\Users\jmuriel\Desktop\web_adopta\fotos\images\perro-sentado.png">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/iconic/css/material-design-iconic-font.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../contact/css/util.css">
+	<link rel="stylesheet" type="text/css" href="../contact/css/main.css">
+<!--===============================================================================================-->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+
+    <!-- the control code, just these two files -->
+    <script type="text/javascript" src="../contact/Leaflet-Control-Credits-master/dist/leaflet-control-credits.js"></script>
+    <link rel="stylesheet" href="../contact/Leaflet-Control-Credits-master/dist/leaflet-control-credits.css" />
+<!--===============================================================================================-->
+    <!-- Bootstrap core CSS -->
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="carousel.css" rel="stylesheet">
+    
+    </style>
+
+    <style type="text/css">
+    /* hack for Leaflet 1.7.1 which only flashes ARIA outlines (though keeps focus) which misses the point of ARIA outlines */
+    .leaflet-container :focus {
+        outline-color: -webkit-focus-ring-color !important;
+        outline-style: auto !important;
+        outline-width: thin !important;
+        outline: revert !important;
+    }
+    </style>
+</head>
+<body onLoad="init()">
+
+<header>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <div class="container-fluid">
+
+        <a href="../index.html" class="navbar-brand d-flex align-items-center">
+        <img
+            src="..\..\fotos\images\perrito_vector.svg" width="45" height="45" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="me-2" viewBox="0 0 24 24"/>
+        <strong>Adopción</strong> 
+        </a>
+
+      <!--<a class="navbar-brand" >En Adopción.</a>-->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="..\Album_adopta.html">Álbum</a>
+          </li>
+          <!--<li class="nav-item">
+            <a class="nav-link disabled">Disabled</a>
+          </li> -->
+        </ul>
+        <form class="d-flex">
+
+          <a class="nav-link" href="../Requisitos_Bootstrap_v5.1.html"  style="color:#fff">Requisitos</a>
+
+        </form>
+      </div>
+    </div>
+  </nav>
+</header>
+
+	<div class="container-contact100">
+
+		<div class="contact100-map"  id="map"></div>
+
+		<div class="wrap-contact100">
+			<form class="contact100-form validate-form">
+				<span class="contact100-form-title">
+					Contáctame
+				</span>
+
+				<div class="wrap-input100 validate-input">
+					<!--<span class="label-input100">Em@il</span>-->
+					<span><a href="mailto:apoteosis1618@gmail.com" class="label-input100" style="color:#A93226; font-size: 30px;text-decoration: none">e-m@il</a></span>
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="wrap-input100 validate-input" >
+					<!--<span class="label-input100">Whatsapp</span>-->
+					<a href="https://api.whatsapp.com/send?phone=+5491163086589&text=Hola, soy adoptante responsable y me interesa adoptar un cachorro ..." class="label-input100" style="color:#25d366; font-size: 30px;text-decoration: none">WhatsApp</a>
+				</div>
+
+        <div class="carousel-caption text-start">
+            <p><span style="color: #fff; font-size: 18px">Si te sentís capaz de cuidar a un ser vivo que te acompañará y será fiel a vos por el resto de su vida, escribime.</span></p>
+          </div>
+
+			</form>
+		</div>
+	</div>
+
+	<div id="dropDownSelect1"></div>
+
+<!--===============================================================================================-->
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/animsition/js/animsition.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/daterangepicker/moment.min.js"></script>
+	<script src="vendor/daterangepicker/daterangepicker.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/countdowntime/countdowntime.js"></script>
+<!--===============================================================================================-->
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAKFWBqlKAGCeS1rMVoaNlwyayu0e0YRes"></script>
+	<script src="js/map-custom.js"></script>
+<!--===============================================================================================-->
+	<script src="js/main.js"></script>
+
+    <script type="text/javascript">
+    function init() {
+    	var map = L.map('map', {
+            maxZoom: 18,
+            minZoom: 6,
+            keyboard: true,
+        });
+    	//L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png', {
+    	L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    	    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, &copy; <a href="https://carto.com/attributions">CARTO</a>',
+    	}).addTo(map);
+        map.setView([-34.722689,-58.435791], 16);
+
+        var credctrl = L.controlCredits({
+        	image: "../../fotos/images/perrito_vector.svg",
+        	link: "../index.html",
+            //link: "C:/Users/jmuriel/Desktop/web_adopta/carousel/index.html"
+        	text: "Adopción Responsable -  Banfield"
+        }).addTo(map);
+        L.control.scale().addTo(map);
+        L.marker([-34.722689, -58.435791],{draggable: true}).addTo(map);
+    }
+    </script>
+
+</body>
+</html>

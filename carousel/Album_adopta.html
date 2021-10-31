@@ -1,0 +1,382 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.88.1">
+    <title>Album example · Bootstrap v5.1</title>
+    <link rel="shortcut icon" href="..\fotos\images\perro-sentado.png">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/album/">
+
+    <!-- Bootstrap core CSS -->
+<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      /*body{
+      background-image: url("C:/Users/jmuriel/Desktop/web_adopta/fotos/images/flores_blancas_y_amarillas.jpg") !important}*/
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    
+  </head>
+  <body>
+    
+<header>
+  <div class="collapse bg-dark" id="navbarHeader">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-8 col-md-7 py-4">
+          <h4 class="text-white">Acerca de ellos</h4>
+          <p class="text-muted">Los cachorros ya estan destetados. Toman leche de vaca y también ingieren sólidos como alimento balanceado (mordida pequeña) y carne hervida. Son todos muy sanos pero adeudan sus vacunas correspondientes. Juegan mucho y estan en la edad de querer morder todo, por eso es imprescindible tenerles paciencia pero al mismo tiempo corregir el comportamiento y reprender de una manera adecuada a su fragilidad, recuerden que apenas tienen dos meses de vida. Hay cachorros más y menos juguetones pero lo cierto es que cada criatura puede adecuar su comportamiento al entorno dependiendo de la educación que se le dé.</p>
+        </div>
+        <div class="col-sm-4 offset-md-1 py-4">
+          <h4 class="text-white">Contacto</h4>
+          <ul class="list-unstyled">
+              <li><a href="https://api.whatsapp.com/send?phone=+5491163086589&text=Hola, soy adoptante responsable y me interesa adoptar un cachorro ..." style="text-decoration: none"><span style="color:#25d366;">WhatsApp</span></a></li>
+              <li><a href="mailto:apoteosis1618@gmail.com" style="text-decoration: none"><span style="color:#34b7f1;">Email</span></a></li>
+              <li><a href="../carousel/Requisitos_Bootstrap_v5.1.html" style="text-decoration: none"><span style="color:#F7DC6F; text-decoration: none">Requisitos</span></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="navbar navbar-dark bg-dark shadow-sm">
+    <div class="container">
+      <a href="../carousel/index.html" class="navbar-brand d-flex align-items-center">
+        <img
+            src="..\fotos\images\perrito_vector.svg" width="45" height="45" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="me-2" viewBox="0 0 24 24"/>
+        <strong>Adopción</strong>
+        </a>
+      <a href="https://www.youtube.com/watch?v=O9BK3xcRH1g&ab_channel=Mysteric" class="navbar-brand d-flex align-items-center">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="me-2" viewBox="0 0 24 24"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+        <strong>Album</strong>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <section class="py-5 text-center container">
+    <div class="row py-lg-5">
+      <div class="col-lg-6 col-md-8 mx-auto">
+        <h1 class="fw-light">Album de Fotos</h1>
+        <p class="lead text-muted">Este es el recopilado de algunas fotos de los cachorros. Como se mencionó antes, son seis machos y cuatro nenas y tienen aproximadamente dos meses de vida. Hay cachorros de color blanco con negro y cachorros de pelaje negro con blanco. Además está Kakaroto, es el único que nació con el color de su madre, es el rubio y ... fue el primero en ser adoptado por una familia.  </p>
+        <p>
+          <!--<a href="#" class="btn btn-primary my-2">Main call to action</a>
+          <a href="#" class="btn btn-secondary my-2">Secondary action</a>-->
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <div class="album py-5 bg-light">
+    <div class="container">
+
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <div class="col">
+          <div class="card shadow-sm">
+
+            <img class="bd-placeholder-img card-img-top" width="auto" height="auto" aria-label="Placeholder: Thumbnail"preserveAspectRatio="xMidYMid slice" focusable="false"src="..\fotos\ima_33.jpg" class="d-block w-100" >
+
+            <div class="card-body">
+              <p class="card-text">Locus posando para el álbum de fotos. A él le gusta jugar mucho y es de los pesos pesados. Actualmente debe pesar unos 2 Kg. Toma mucha leche y se esfuerza por comer su balanceado .</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+
+            <img class="bd-placeholder-img card-img-top" width="auto" height="auto" aria-label="Placeholder: Thumbnail"preserveAspectRatio="xMidYMid slice" focusable="false"src="..\fotos\ima_172.jpg" class="d-block w-100" >
+
+            <div class="card-body">
+              <p class="card-text">Mr. Pickles es uno de los más traviesos y reñidores, pero le gusta mucho que le rasquen la panza y le den muchos mimos. Está aprendiendo a hacer pis en su bandeja con piedritas, pero aún no apunta muy bien.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img class="bd-placeholder-img card-img-top" width="auto" height="auto" aria-label="Placeholder: Thumbnail"preserveAspectRatio="xMidYMid slice" focusable="false"src="..\fotos\ima_203a.jpg" class="d-block w-100" >
+
+            <div class="card-body">
+              <p class="card-text">El guapo de Kakaroto. Fue el primero en aprender a caminar y ahora atraviesa la etapa de querer morder todo, sobre todo los dedos gordos de mis pies :")  .</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <img class="bd-placeholder-img card-img-top" width="auto" height="auto" aria-label="Placeholder: Thumbnail"preserveAspectRatio="xMidYMid slice" focusable="false"src="..\fotos\ima_97.jpg" class="d-block w-100" >
+
+            <div class="card-body">
+              <p class="card-text">Luperca tiene medias blancas en sus cuatro patitas. Es grandota y musculosa pero tiene unos ojazos que enamoran. Una bombona.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img class="bd-placeholder-img card-img-top" width="auto" height="auto" aria-label="Placeholder: Thumbnail"preserveAspectRatio="xMidYMid slice" focusable="false"src="..\fotos\ima_20.jpg" class="d-block w-100" >
+
+            <div class="card-body">
+              <p class="card-text">A Totó la encontrás sentadita y taciturna mirándote fijamente con sus ojazos hermosos y pidiéndote que la levantes en brazos. Me puede.</span></p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img class="bd-placeholder-img card-img-top" width="auto" height="auto" aria-label="Placeholder: Thumbnail"preserveAspectRatio="xMidYMid slice" focusable="false"src="..\fotos\ima_221.jpg" class="d-block w-100" >
+
+            <div class="card-body">
+              <p class="card-text">Él es Ficha. Ficha fue el primero que me quitó el sueño por la noche porque no paraba de llorar. Sería comprensible si no se tratara del cachorro más grandote y pesado de la camada. Sin duda alguna un nene gigante que precisa muchos mimos.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <img class="bd-placeholder-img card-img-top" width="auto" height="auto" aria-label="Placeholder: Thumbnail"preserveAspectRatio="xMidYMid slice" focusable="false"src="..\fotos\ima_98.jpg" class="d-block w-100" >
+
+            <div class="card-body">
+              <p class="card-text">Wilson es un pan de dios. Es muy tranquilo y esponjoso. Cuando nació creí que tenía algún tipo de sindrome, porque no jugaba mucho, luego comprendí que así era su carácter. Él adora ser apapachado y que le busquen pulguitas.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img class="bd-placeholder-img card-img-top" width="auto" height="auto" aria-label="Placeholder: Thumbnail"preserveAspectRatio="xMidYMid slice" focusable="false"src="..\fotos\ima_82.jpg" class="d-block w-100" >
+
+            <div class="card-body">
+              <p class="card-text">Atuk es el fortachón y peso pesado. Siempre está buscando jugar a las luchas. </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <img class="bd-placeholder-img card-img-top" width="auto" height="auto" aria-label="Placeholder: Thumbnail"preserveAspectRatio="xMidYMid slice" focusable="false"src="..\fotos\ima_132.jpg" class="d-block w-100" >
+
+            <div class="card-body">
+              <p class="card-text">Layla es la más chiquita de la camada. A ella le gusta pelear con los más grandes. También apoya su cabecita en el hombro cuando la paseas en brazos. Es muy dócil y traviesa.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <img class="bd-placeholder-img card-img-top" width="auto" height="auto" aria-label="Placeholder: Thumbnail"preserveAspectRatio="xMidYMid slice" focusable="false"src="..\fotos\ima_34.jpg" class="d-block w-100" >
+
+            <div class="card-body">
+              <p class="card-text">Locus quiere correr como indio y morder todo, pero cuando intento tomarle algunas fotos se aburre mucho y me ignora  XD.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <img class="bd-placeholder-img card-img-top" width="auto" height="auto" aria-label="Placeholder: Thumbnail"preserveAspectRatio="xMidYMid slice" focusable="false"src="..\fotos\ima_146.jpg" class="d-block w-100" >
+
+            <div class="card-body">
+              <p class="card-text">A la gorda guapa de Heroku le gusta dormir. Luego de tomar leche juega muy poco y se acuesta a descansar donde sea. Si la levantás con las manos ella no opone resistencia y duerme donde se la acomode.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <img class="bd-placeholder-img card-img-top" width="auto" height="auto" aria-label="Placeholder: Thumbnail"preserveAspectRatio="xMidYMid slice" focusable="false"src="..\fotos\ima_25.jpg" class="d-block w-100" >
+
+            <div class="card-body">
+              <p class="card-text">Se asustó a ver a la babosa y los junté para que se conozcan un poco. Así es Totó. </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <img class="bd-placeholder-img card-img-top" width="auto" height="auto" aria-label="Placeholder: Thumbnail"preserveAspectRatio="xMidYMid slice" focusable="false"src="..\fotos\ima_228.jpg" class="d-block w-100" >
+
+            <div class="card-body">
+              <p class="card-text">No pude perderme la oportunidad de ponerle el disfraz de abejita a la petisa. Layla siempre está dispuesta a tomarse fotos bien mamonas, no como el gato que me envió al hospital y no quiso disfrazarse de insecto. </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <img class="bd-placeholder-img card-img-top" width="auto" height="auto" aria-label="Placeholder: Thumbnail"preserveAspectRatio="xMidYMid slice" focusable="false"src="..\fotos\ima_63.jpg" class="d-block w-100" >
+
+            <div class="card-body">
+              <p class="card-text">Wilson es ese tipo de sujeto que lo conocés 1 minuto y decís: - Que agradable sujeto ... -</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <img class="bd-placeholder-img card-img-top" width="auto" height="auto" aria-label="Placeholder: Thumbnail"preserveAspectRatio="xMidYMid slice" focusable="false"src="..\fotos\ima_94.jpg" class="d-block w-100" >
+
+            <div class="card-body">
+              <p class="card-text">La bicha de Luperca, tiene una obsesión importante relacionada a intentar morderle la cola a los gatos, y bueno, a veces ellos le dan para que cobre, pero nunca aprende.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <img class="bd-placeholder-img card-img-top" width="auto" height="auto" aria-label="Placeholder: Thumbnail"preserveAspectRatio="xMidYMid slice" focusable="false"src="..\fotos\ima_215a.jpg" class="d-block w-100" >
+
+            <div class="card-body">
+              <p class="card-text">Aunque Kakaroto ya fue adoptado no quiero que quede fuera del album. Kakaroto es mmuy paseador y el único que no se queja tanto al caminar con su correa. Un genio.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <img class="bd-placeholder-img card-img-top" width="auto" height="auto" aria-label="Placeholder: Thumbnail"preserveAspectRatio="xMidYMid slice" focusable="false"src="..\fotos\ima_117.jpg" class="d-block w-100" >
+
+            <div class="card-body">
+              <p class="card-text">Cuando a Ficha no lo encontré junto a sus hermanos supuse que estaba entretenido con algo, y ahí lo encontré: molestando a la pobre tortuga que solo intentaba dormir en su escondite que él había descubierto.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <img class="bd-placeholder-img card-img-top" width="auto" height="auto" aria-label="Placeholder: Thumbnail"preserveAspectRatio="xMidYMid slice" focusable="false"src="..\fotos\ima_161.jpg" class="d-block w-100" >
+
+            <div class="card-body">
+              <p class="card-text">Mr. Pickles me ladra cuando me tardo en servirle su comida y organiza al resto para hacer quilombo; el sindicalista. Discúlpeme caballero, no volverá a suceder.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <img class="bd-placeholder-img card-img-top" width="auto" height="auto" aria-label="Placeholder: Thumbnail"preserveAspectRatio="xMidYMid slice" focusable="false"src="..\fotos\ima_79.jpg" class="d-block w-100" >
+
+            <div class="card-body">
+              <p class="card-text">Es grandote y pesado y me cuesta levantarlo, pero Atuk tiene de corazón lo mismo que de músculo. Me recuerda al Ringo Bonavena.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<footer class="text-muted py-5">
+  <div class="container">
+    <p class="float-end mb-1">
+      <p class="float-end"><a href="#"><span style=" font-weight: 600;">Back to top</span></a></p>
+    </p>
+    <p class="mb-1">Diseñado con &copy;Bootstrap</p>
+    <p>&copy; 2017–2021  Tr1l0byte, Inc. &middot; </p>
+  </div>
+</footer>
+
+
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+
+      
+  </body>
+</html>
