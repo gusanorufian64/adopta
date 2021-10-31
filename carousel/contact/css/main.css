@@ -519,7 +519,7 @@ textarea.input100 {
   .wrap-contact100 {
     width: 100%;
     /*background-color: orange;*/  /*AGREGADO JOA*/
-    background-image:   url("C:/Users/jmuriel/Desktop/web_adopta/fotos/images/forest-01.svg");
+    background-image:   url("../../../fotos/images/forest-01.svg");
     background-repeat:no-repeat;
     background-size:cover;
   }
